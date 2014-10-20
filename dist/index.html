@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BDC Scoreboard</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./js/Scoreboard.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/custom.css" />
+	</head>
+	<body>
+		<div class="container text-center">			
+			<h1 class="page-heading">Bolders Dart Competition 2014</h1>
+		</div>
+
+		<div class="row-fluid">
+			<div class="col-md-offset-1 col-md-4">
+				<div class="row-fluid">
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-12">
+								<label>Spieler 1</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-7">
+								<input type="text" class="form-control" />
+							</div>
+							<div class="col-md-5">
+								<div id="pimmel-p-1"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<table class="table" id="tbl-p-1">
+						<tr>
+							<td class="col-md-4">1</td>
+							<td class="col-md-8">501</td>
+						</tr>
+					</table>
+					<input type="hidden" name="score-p-1" id="score-p-1" />
+				</div>				
+				<div class="row-fluid">					
+					<div class="col-md-4">
+						<input type="text" id="add-score-p-1" class="form-control" />
+					</div>
+					<div class="col-md-8">
+						<a href="#" id="add-score-p-1-btn" class="btn btn-primary" onclick="UpdateScore('add-score-p-1', 'tbl-p-1');return false;">
+							<i class="glyphicon glyphicon-plus"></i> Wurf eintragen
+						</a>
+						<a href="#" id="add-pimmel-p-1-btn" class="btn btn-primary" onclick="Pimmel('pimmel-p-1');return false;">
+							<img src="./img/p.png"> Pimmel!
+						</a>
+						<a href="#" id="undo-p-1-btn" class="btn btn-danger" onclick="Undo('tbl-p-1'); return false;">
+							<i class="glyphicon glyphicon-arrow-left"></i> R&uuml;ckg&auml;ngig
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 text-center">
+				<div class="form-group">
+					<label>&nbsp;</label>
+					<div><a class="btn btn-success" onclick="Clear();">Neues Spiel starten</a></div>
+				</div>				
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+						<div class="row">
+							<div class="col-md-12">
+								<label>Spieler 2</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-7">
+								<input type="text" class="form-control" />
+							</div>
+							<div class="col-md-5">
+								<div id="pimmel-p-2"></div>
+							</div>
+						</div>
+					</div>
+				<div class="row-fluid">
+					<table class="table" id="tbl-p-2">
+						<tr>
+							<td class="col-md-4">1</td>
+							<td class="col-md-8">501</td>
+						</tr>
+					</table>
+					<input type="hidden" name="score-p-2" id="score-p-2" />
+				</div>
+				<div class="row-fluid">					
+					<div class="col-lg-4 col-md-6">
+						<input type="text" id="add-score-p-2" class="form-control" />
+					</div>
+					<div class="col-lg-8 col-md-6">
+						<a href="#" id="add-score-p-2-btn" class="btn btn-primary" onclick="UpdateScore('add-score-p-2', 'tbl-p-2');return false;">
+							<i class="glyphicon glyphicon-plus"></i> Wurf eintragen
+						</a>
+						<a href="#" id="add-pimmel-p-2-btn" class="btn btn-primary" onclick="Pimmel('pimmel-p-2');return false;">
+							<img src="./img/p.png"> Pimmel!
+						</a>
+						<a href="#" id="undo-p-2-btn" class="btn btn-danger" onclick="Undo('tbl-p-1'); return false;">
+							<i class="glyphicon glyphicon-arrow-left"></i> R&uuml;ckg&auml;ngig
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
