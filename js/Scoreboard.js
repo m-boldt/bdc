@@ -1,4 +1,32 @@
 $(document).ready(function() {
+	$("#add-score-p-1-btn").bind("tap", function() {
+		UpdateScore('add-score-p-1', 'tbl-p-1');
+		return false;
+	})
+	$("#add-score-p-2-btn").bind("tap", function() {
+		UpdateScore('add-score-p-2', 'tbl-p-2');
+		return false;
+	})
+	$("#add-pimmel-p-1-btn").bind("tap", function() {
+		Pimmel("pimmel-p-1");
+		return false;
+	})	
+	$("#add-pimmel-p-2-btn").bind("tap", function() {
+		Pimmel("pimmel-p-2");
+		return false;
+	})	
+	$("#undo-p-1-btn").bind("tap", function() {
+		Undo('tbl-p-1');
+		 return false;
+	});
+	$("#undo-p-2-btn").bind("tap", function() {
+		Undo('tbl-p-2');
+		return false;
+	});
+	$("#clear").bind("tap", function() {
+		Clear();
+		return false;
+	});
 	$("#add-score-p-1-btn").bind("click", function() {
 		UpdateScore('add-score-p-1', 'tbl-p-1');
 		return false;
