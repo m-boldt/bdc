@@ -44,6 +44,9 @@ function Clear() {
 	$("input[type=text]").each(function(index, item) {
 		$(item).val("");
 	}); 
+
+	$("#pimmel-p-1").html("");
+	$("#pimmel-p-2").html("");
 }
 
 function Pimmel(wrapperID) {
