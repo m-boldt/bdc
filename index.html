@@ -10,100 +10,102 @@
 		<link rel="stylesheet" type="text/css" href="./css/custom.css" />
 	</head>
 	<body>
-		<div class="container text-center">			
-			<h1 class="page-heading">Bolders Dart Competition 2014</h1>
-		</div>
-
-		<div class="row">
-			<div class="col-lg-5 col-md-5 col-sm-5">
-				<div class="row">
+		<div class="container">			
+			<div class="text-center">
+				<h1 class="page-heading">Bolders Dart Competition 2014</h1>
+			</div>
+	
+			<div class="row">
+				<div class="col-lg-5 col-md-5 col-sm-5">
+					<div class="row">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-12">
+									<label>Spieler 1</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-7">
+									<input type="text" class="form-control" />
+								</div>
+								<div class="col-md-5">
+									<div id="pimmel-p-1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<table class="table" id="tbl-p-1">
+							<tr>
+								<td class="col-md-4">1</td>
+								<td class="col-md-8">501</td>
+							</tr>
+						</table>
+						<input type="hidden" name="score-p-1" id="score-p-1" />
+					</div>				
+					<div class="row">					
+						<div class="col-md-12 col-sm-12 col-lg-4 form-group">
+							<input type="text" id="add-score-p-1" class="form-control" />
+						</div>
+						<div class="col-lg-8 col-md-12 col-sm-12 form-group">
+							<a href="#" id="add-score-p-1-btn" class="btn btn-primary col-sm-12 col-lg-7">
+								<i class="glyphicon glyphicon-plus"></i> Wurf eintragen
+							</a>
+							<a href="#" id="add-pimmel-p-1-btn" class="btn btn-primary col-sm-12 col-lg-5">
+								<img src="./img/p.png"> Pimmel!
+							</a>
+							<a href="#" id="undo-p-1-btn" class="btn btn-danger col-sm-12 col-lg-12">
+								<i class="glyphicon glyphicon-arrow-left"></i> R&uuml;ckg&auml;ngig
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 text-center">
 					<div class="form-group">
-						<div class="row">
-							<div class="col-md-12">
-								<label>Spieler 1</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-7">
-								<input type="text" class="form-control" />
-							</div>
-							<div class="col-md-5">
-								<div id="pimmel-p-1"></div>
-							</div>
-						</div>
-					</div>
+						<label>&nbsp;</label>
+						<div><a class="btn btn-success" id="clear" onclick="Clear();">Neues Spiel</a></div>
+					</div>				
 				</div>
-				<div class="row">
-					<table class="table" id="tbl-p-1">
-						<tr>
-							<td class="col-md-4">1</td>
-							<td class="col-md-8">501</td>
-						</tr>
-					</table>
-					<input type="hidden" name="score-p-1" id="score-p-1" />
-				</div>				
-				<div class="row">					
-					<div class="col-md-4">
-						<input type="text" id="add-score-p-1" class="form-control" />
-					</div>
-					<div class="col-md-8">
-						<a href="#" id="add-score-p-1-btn" class="btn btn-primary">
-							<i class="glyphicon glyphicon-plus"></i> Wurf eintragen
-						</a>
-						<a href="#" id="add-pimmel-p-1-btn" class="btn btn-primary">
-							<img src="./img/p.png"> Pimmel!
-						</a>
-						<a href="#" id="undo-p-1-btn" class="btn btn-danger" onclick="">
-							<i class="glyphicon glyphicon-arrow-left"></i> R&uuml;ckg&auml;ngig
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 text-center">
-				<div class="form-group">
-					<label>&nbsp;</label>
-					<div style="><a class="btn btn-success" id="clear" onclick="Clear();">Neues Spiel</a></div>
-				</div>				
-			</div>
-			<div class="col-lg-5 col-md-5 col-sm-5">
-				<div class="form-group">
-						<div class="row">
-							<div class="col-md-12">
-								<label>Spieler 2</label>
+				<div class="col-lg-5 col-md-5 col-sm-5">
+					<div class="form-group">
+							<div class="row">
+								<div class="col-md-12">
+									<label>Spieler 2</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-7">
+									<input type="text" class="form-control" />
+								</div>
+								<div class="col-md-5">
+									<div id="pimmel-p-2"></div>
+								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-7">
-								<input type="text" class="form-control" />
-							</div>
-							<div class="col-md-5">
-								<div id="pimmel-p-2"></div>
-							</div>
+					<div class="row">
+						<table class="table" id="tbl-p-2">
+							<tr>
+								<td class="col-md-4">1</td>
+								<td class="col-md-8">501</td>
+							</tr>
+						</table>
+						<input type="hidden" name="score-p-2" id="score-p-2" />
+					</div>
+					<div class="row">					
+						<div class="col-md-12 col-sm-12 col-lg-4 form-group">
+							<input type="text" id="add-score-p-2" class="form-control" />
+						</div>						
+						<div class="col-lg-8 col-md-12 col-sm-12 form-group">
+							<a href="#" id="add-score-p-2-btn" class="btn btn-primary col-lg-7 col-sm-12">
+								<i class="glyphicon glyphicon-plus"></i> Wurf eintragen
+							</a>
+							<a href="#" id="add-pimmel-p-2-btn" class="btn btn-primary col-lg-5 col-sm-12">
+								<img src="./img/p.png"> Pimmel!
+							</a>
+							<a href="#" id="undo-p-2-btn" class="btn btn-danger col-sm-12 col-lg-12">
+								<i class="glyphicon glyphicon-arrow-left"></i> R&uuml;ckg&auml;ngig
+							</a>
 						</div>
-					</div>
-				<div class="row">
-					<table class="table" id="tbl-p-2">
-						<tr>
-							<td class="col-md-4">1</td>
-							<td class="col-md-8">501</td>
-						</tr>
-					</table>
-					<input type="hidden" name="score-p-2" id="score-p-2" />
-				</div>
-				<div class="row">					
-					<div class="col-lg-4 col-md-6">
-						<input type="text" id="add-score-p-2" class="form-control" />
-					</div>
-					<div class="col-lg-8 col-md-6">
-						<a href="#" id="add-score-p-2-btn" class="btn btn-primary">
-							<i class="glyphicon glyphicon-plus"></i> Wurf eintragen
-						</a>
-						<a href="#" id="add-pimmel-p-2-btn" class="btn btn-primary">
-							<img src="./img/p.png"> Pimmel!
-						</a>
-						<a href="#" id="undo-p-2-btn" class="btn btn-danger">
-							<i class="glyphicon glyphicon-arrow-left"></i> R&uuml;ckg&auml;ngig
-						</a>
 					</div>
 				</div>
 			</div>
