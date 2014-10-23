@@ -27,9 +27,7 @@ $(document).ready(function() {
 		Clear();
 		return false;
 	});
-	$("#add-score-p-1-btn").bind("click", function() {
-		$("#form-p-1").submit();
-	})
+	
 	$("#add-score-p-2-btn").bind("click", function() {
 		UpdateScore('add-score-p-2', 'tbl-p-2');
 		return false;
@@ -88,6 +86,7 @@ function Pimmel(wrapperID) {
 
 function UpdateScore(textboxID, tableID) {
 
+	alert("check");
 	var textbox = $("#" + textboxID);
 	var val = Number.parseInt(textbox.val());
 	textbox.val("");
