@@ -44,20 +44,22 @@
 						<input type="hidden" name="score-p-1" id="score-p-1" />
 					</div>				
 					<div class="row">					
-						<div class="col-md-12 col-sm-12 col-lg-4 form-group">
-							<input type="number" id="add-score-p-1" class="form-control" />
-						</div>
-						<div class="col-lg-8 col-md-12 col-sm-12 form-group">
-							<a href="#" id="add-score-p-1-btn" class="btn btn-primary col-sm-12 col-lg-7">
-								<i class="glyphicon glyphicon-plus"></i> Wurf eintragen
-							</a>
-							<a href="#" id="add-pimmel-p-1-btn" class="btn btn-primary col-sm-12 col-lg-5">
-								<img src="./img/p.png"> Pimmel!
-							</a>
-							<a href="#" id="undo-p-1-btn" class="btn btn-danger col-sm-12 col-lg-12">
-								<i class="glyphicon glyphicon-arrow-left"></i> R&uuml;ckg&auml;ngig
-							</a>
-						</div>
+						<form name="form-p-1" id="form-p-1" onsubmit="UpdateScore('add-score-p-1', 'tbl-p-1');return false;">
+							<div class="col-md-12 col-sm-12 col-lg-4 form-group">
+								<input type="number" id="add-score-p-1" class="form-control" />
+							</div>
+							<div class="col-lg-8 col-md-12 col-sm-12 form-group">
+								<button id="add-score-p-1-btn" class="btn btn-primary col-sm-12 col-lg-7">
+									<i class="glyphicon glyphicon-plus"></i> Wurf eintragen
+								</button>
+								<a href="#" id="add-pimmel-p-1-btn" class="btn btn-primary col-sm-12 col-lg-5">
+									<img src="./img/p.png"> Pimmel!
+								</a>
+								<a href="#" id="undo-p-1-btn" class="btn btn-danger col-sm-12 col-lg-12">
+									<i class="glyphicon glyphicon-arrow-left"></i> R&uuml;ckg&auml;ngig
+								</a>
+							</div>
+						</form>
 					</div>
 				</div>
 				<div class="col-lg-2 col-md-2 col-sm-2 text-center">

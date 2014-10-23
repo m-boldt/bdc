@@ -28,8 +28,7 @@ $(document).ready(function() {
 		return false;
 	});
 	$("#add-score-p-1-btn").bind("click", function() {
-		UpdateScore('add-score-p-1', 'tbl-p-1');
-		return false;
+		$("#form-p-1").submit();
 	})
 	$("#add-score-p-2-btn").bind("click", function() {
 		UpdateScore('add-score-p-2', 'tbl-p-2');
