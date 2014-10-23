@@ -86,7 +86,6 @@ function Pimmel(wrapperID) {
 
 function UpdateScore(textboxID, tableID) {
 
-	alert("check");
 	var textbox = $("#" + textboxID);
 	var val = Number.parseInt(textbox.val());
 	textbox.val("");
