@@ -91,7 +91,7 @@ function UpdateScore(textboxID, tableID) {
 	textbox.val("");
 
 
-	if(val <= 0 || isNaN(val)) {
+	if(val <= 0 || val > 180 || isNaN(val)) {
 		return;
 	}
 
